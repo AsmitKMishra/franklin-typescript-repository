@@ -1,9 +1,12 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  /* background-color: rgb(20, 37, 32); */
+  background-color: black;
   width: 100%;
   z-index: 2;
   position: fixed;
+  color: white;
 }
 
 header nav {
@@ -16,9 +19,10 @@ header nav {
   gap: 0 2em;
   margin: auto;
   max-width: 1264px;
-  height: var(--nav-height);
+  /* height: var(--nav-height); */
   padding: 0 1rem;
   font-family: var(--body-font-family);
+  height: 120px;
 }
 
 header nav[aria-expanded="true"] {
@@ -76,6 +80,7 @@ header nav .nav-hamburger button {
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
+  /* background-color: green; */
 }
 
 header nav .nav-hamburger-icon,
@@ -148,7 +153,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 225px;
   height: auto;
 }
 
@@ -163,28 +168,55 @@ header nav .nav-sections {
 
 header nav[aria-expanded="true"] .nav-sections {
   display: block;
+  /* display: flex; */
   visibility: visible;
   align-self: start;
 }
 
 header nav .nav-sections ul  {
   list-style: none;
+  /* list-style:circle; */
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
 }
 
+
+
 header nav .nav-sections ul > li {
   font-weight: 700;
 }
+/*my custom*/
+/* header nav .nav-sections ul > li:hover{
+  color: red;
+  text-decoration:none;
+} */
+/*custom edns*/
 
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
-
+/* cutom  */
+header nav .nav-sections ul > li > ul:hover{
+  /* color: crimson; */
+  text-decoration: none;
+}
 header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
 }
+header nav .nav-sections ul > li > ul > li:hover{
+  /* color: crimson; */
+  /* text-decoration:dotted; */
+}
+header nav .nav-sections ul > li > ul > li > a:hover{
+  color: crimson;
+  text-decoration:none;
+}
+header nav .nav-sections ul > li >a:hover{
+  color: crimson;
+  text-decoration: none;
+}
+/* custom end */
 
 @media (min-width: 900px) {
   header nav .nav-sections {
@@ -248,8 +280,9 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
+    /* background-color: var(--highlight-background-color); */
     white-space: initial;
+    background-color:black;
   }
 
   header nav .nav-sections > ul > li > ul::before {
